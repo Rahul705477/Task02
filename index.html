@@ -3,43 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
+    <title>Responsive Layout with Flexbox & Grid</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="contact-form">
-        <h1>Contact Us</h1>
-        <form action="#" method="POST">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    <!-- Header with Flexbox Navigation -->
+    <header class="header">
+        <div class="logo">FlexGrid</div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
             </div>
+        </nav>
+    </header>
 
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Our Website</h1>
+        <p>A responsive layout built with Flexbox and CSS Grid</p>
+    </section>
 
-            <div class="form-group">
-                <label for="phone">Phone (Optional):</label>
-                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
-            </div>
+    <!-- Main Content with CSS Grid -->
+    <main class="grid-container">
+        <article class="card">
+            <h2>Service 1</h2>
+            <p>What kind of Services you want to provide you can write here!</p>
+        </article>
+        <article class="card">
+            <h2>Service 2</h2>
+            <p>What kind of Services you want to provide you can write here!</p>
+        </article>
+        <article class="card">
+            <h2>Service 3</h2>
+            <p>What kind of Services you want to provide you can write here!</p>
+        </article>
+        <article class="card">
+            <h2>Service 4</h2>
+            <p>What kind of Services you want to provide you can write hare!</p>
+        </article>
+    </main>
 
-            <div class="form-group">
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
-            </div>
+    <!-- Sidebar & Content (Flexbox) -->
+    <section class="content-sidebar">
+        <aside class="sidebar">
+            <h3>Latest News</h3>
+            <ul>
+                <li>News Item 1</li>
+                <li>News Item 2</li>
+                <li>News Item 3</li>
+            </ul>
+        </aside>
+        <div class="main-content">
+            <h2>Main Content Area</h2>
+            <p>This section uses Flexbox to align sidebar and content.</p>
+        </div>
+    </section>
 
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
-            </div>
-
-            <button type="submit" class="submit-btn">Send Message</button>
-        </form>
-    </div>
-
-
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy;Thanks for visiting!</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
